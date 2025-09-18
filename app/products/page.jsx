@@ -4,8 +4,10 @@ import React from 'react'
 import {motion} from "framer-motion"
 import StatCard from '@/components/StatCard'
 import { DollarSign, ShoppingBag, SquareActivity } from 'lucide-react'
+import ProductsTable from '@/components/ProductsTable'
 
 const ProductsPage = () => {
+    
   return (
     <div className='flex-1 overflow-auto relative x-10 '>
       <main className='max-w-7xl mx-auto py-6 px-4 lg:px-8 '>
@@ -20,6 +22,7 @@ const ProductsPage = () => {
             <StatCard  name='Total Categories' icon={SquareActivity} value={"8"}/>
 
         </motion.div>
+        <ProductsTable/>
       </main>
     </div>
   )
